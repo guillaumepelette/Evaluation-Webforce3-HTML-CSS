@@ -14,6 +14,7 @@ body {
     width:100%;
     background-color:black;
     color:black;
+    line-height:inherit;
 }
 
 header {
@@ -31,7 +32,6 @@ header {
     width: 100%;
     max-width:1000px;
     padding-top: 15px;
-
 }
 
 .div_left {
@@ -42,6 +42,8 @@ header {
     width: 50%;
     max-width:500px;
     padding-left:15px;
+    border-left: 3px #ea9f05 solid;
+    border-image: linear-gradient(to top,rgb(255, 123, 0)  -70%,aliceblue  100%);
 }
 
 .div_left_top {
@@ -55,11 +57,11 @@ header {
 
 .div_left_bottom {
     font-size:1.5em;
-    font-weight:500; 
+    font-weight:500;
 }
 
 .div_left_bottom em {
-    color: #ea9f05;
+    color: #;
 }
 
 .div_right {
@@ -201,6 +203,7 @@ nav ul li a {
     width: 100%;
     max-width:1000px;
     padding: 15px;
+    padding-bottom: 0;
 }
 
 .main_container {
@@ -210,6 +213,8 @@ nav ul li a {
     width: 100%;
     max-width:1000px;
     padding: 15px;
+    padding-bottom: 0;
+    position:relative;
 }
 
 .boxing_wallpaper {
@@ -228,6 +233,7 @@ nav ul li a {
     width: 100%;
     max-width:1000px;
     padding: 25px 50px;
+    padding-bottom:100px;
     background-color:#f3f3f3;
 }
 
@@ -244,6 +250,7 @@ nav ul li a {
     top:15px;
     left: 290px;
     border: 2px ridge #272727;
+    border-radius: 4px;
     background-color:#3a3a3a;
     color: #ea9f05;
     font-weight:900;
@@ -311,10 +318,67 @@ button {
     font-size:1.8em;
 }
 
+.footer_nav_container {
+    display: flex;
+    justify-content:center;
+}
+
+.footer_navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
+    background-color:#f3f3f3;
+    max-width:500px;
+    padding:5px 25px;
+    padding-top:10px;
+    border: 2px solid #f3f3f3;
+    border-radius: 4px;
+    box-shadow: 0px -3px 1px grey;
+    position:absolute;
+    bottom: -20px;
+    z-index: 10;
+}
+
+.footer_navbar ul {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_navbar ul li {
+    display: flex;
+    padding:0 10px;
+    align-items:center;
+    border:none;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
 
 footer {
     background-color: #373737;
-    height:300px;
+    width:100%;
+    position:relative;
+}
+
+.footer_upper-bar {
+    height:25px;
+    width:100%;
+    background-color: #373737;
+    position:absolute;
+    top:-53px;
+}
+
+.footer_lower-bar {
+    height:350px;
+    width:100%;
     display:flex;
     flex-flow:column nowrap;
     justify-content:stretch;
